@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - JSON eBook Reader Shell // Mavo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://get.mavo.io/stable/mavo.es5.js"></script>
+<link rel="stylesheet" href="https://get.mavo.io/stable/mavo.css">
+
+<link rel="stylesheet" href="https://use.typekit.net/apr3ert.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="app" mv-app="" mv-storage="https://github.com/brianhaferkamp/jsonBooks" mv-plugins="markdown" mv-bar="none">
+  <header class="masthead">
+    <h1 class="book-title">[booktitle]</h1>
+  </header>
+  <section class="title-page">
+    <div class="title-image"><img src="[coverimage]"/></div>
+    <h1 class="title">[booktitle]</h1>
+    <h2 class="author">by [bookauthor]</h2>
+  </section>
+  <aside class="horz-line"></aside>
+  <main class="content">
+    <div class="chapter" id="[idify(chaptertitle)]" mv-multiple="mv-multiple" property="chapter">
+      <h1 class="chapter-title" property="chaptertitle"></h1>
+      <article class="chapter-text markdown" property="chaptertext">     </article>
+    </div>
+  </main>
+  <div class="overlay" hidden="hidden"></div>
+  <aside class="panel toc" hidden="hidden">
+    <header>
+      <h3 class="panel-header">Table of Contents</h3>
+    </header>
+    <section>
+      <ul class="toc-list">
+        <li class="toc-list-item" property="toctitle" mv-multiple="mv-multiple" data-link="[idify(toctitle)]"></li>
+      </ul>
+    </section>
+  </aside>
+  <aside class="panel settings" hidden="hidden">
+    <header>
+      <h3 class="panel-header">Settings</h3>
+    </header>
+    <section>
+      <div class="settings-group">
+        <p class="settings-label">Dark mode</p>
+        <div class="switch dark-switch">
+          <div class="switch-inner"></div>
+        </div>
+      </div>
+    </section>
+  </aside>
+</div>
+<footer class="footer">
+  <ul>
+    <li><i class="zmdi zmdi-chevron-left"></i></li>
+    <li class="menu-link"><i class="zmdi zmdi-view-list-alt"></i></li>
+    <li class="settings-link"><i class="zmdi zmdi-settings"></i></li>
+    <!--li <a href="#top"><i class="zmdi zmdi-chevron-up"></i></a>    -->
+  </ul>
+</footer>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

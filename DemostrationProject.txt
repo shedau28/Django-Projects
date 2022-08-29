@@ -1,0 +1,44 @@
+# Free eBook Reader
+# USERS
+# 1. Author
+# 2. Reader
+
+# Panel
+# Login and Registration
+# Profile - (Author) Update, change password, manage book content and other settings
+# Profile - (Reader) Update, change password and other settings
+
+# Book Category
+
+
+user_roles - table
+Author
+Reader
+
+master - table
+user_role + user_roles
+email
+password
+active_status
+joined_date
+last_login
+
+profile - table
+master + master table
+name
+dob
+gender
+address
+mobile
+last_updated
+
+Category table
+name
+
+books - table
+Category + Category table
+author + profile
+title
+publish_date
+isbn
+last_updated

@@ -1,0 +1,284 @@
+body {
+  font-size: 18px;
+  color: #222;
+  font-family: mrs-eaves, serif;
+}
+body.dark {
+  background-color: #333;
+  color: #f9f9f9;
+}
+body.dark a {
+  color: #f9f9f9;
+}
+body.dark .horz-line {
+  background-color: rgba(249, 249, 249, 0.2);
+}
+body.dark .footer {
+  background-color: #222;
+}
+body.dark .footer ul li,
+body.dark .footer ul a {
+  color: #f9f9f9;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+p {
+  line-height: 1.1;
+  font-size: 1.5rem;
+}
+@media (min-width: 600px) {
+  p {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+}
+
+ol {
+  padding: 0 0 0 1rem;
+}
+
+#app {
+  max-width: 900px;
+  margin: auto;
+}
+
+.masthead {
+  padding: 0 2rem;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  transform: translateY(-150%);
+}
+
+.book-title {
+  font-size: 1rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+  padding: 0.5rem 0;
+}
+@media (min-width: 600px) {
+  .book-title {
+    font-size: 1.5rem;
+  }
+}
+
+.title-page {
+  text-align: center;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  padding: 0 3rem;
+}
+@media (min-width: 600px) {
+  .title-page {
+    height: auto;
+    padding: 3rem 3rem 0;
+  }
+}
+
+.title-image img {
+  display: block;
+  margin: auto;
+  width: 250px;
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 600px) {
+  .title-image img {
+    width: 300px;
+  }
+}
+
+.title {
+  margin: 2rem 0 1rem;
+  font-style: italic;
+  font-size: 3rem;
+  line-height: 1.1;
+}
+@media (min-width: 600px) {
+  .title {
+    font-size: 5rem;
+    line-height: 1;
+  }
+}
+
+.author {
+  margin: 0;
+  font-size: 1.5rem;
+}
+@media (min-width: 600px) {
+  .author {
+    font-size: 2rem;
+  }
+}
+
+.horz-line {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 75%;
+  margin: auto;
+  margin-top: 4rem;
+}
+@media (min-width: 600px) {
+  .horz-line {
+    margin-top: 6rem;
+  }
+}
+
+.content {
+  padding: 0 2rem 1.5rem;
+  min-height: 100vh;
+}
+
+.chapter {
+  margin: 4rem 0;
+}
+
+.chapter-title {
+  font-size: 3rem;
+  line-height: 1;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .chapter-title {
+    font-size: 5rem;
+  }
+}
+
+.lead {
+  font-style: italic;
+  line-height: 1.3;
+  margin-bottom: 3rem;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  max-width: 900px;
+  margin: 1rem auto;
+}
+.footer ul li {
+  font-size: 1.5rem;
+  color: #444;
+}
+@media (min-width: 600px) {
+  .footer ul li {
+    font-size: 2rem;
+  }
+}
+
+.panel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  max-height: 70vh;
+  background-color: #fff;
+  z-index: 1000;
+  padding: 1rem 1.5rem 2rem;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+  margin: 0 auto;
+  border-radius: 5px;
+  color: #222;
+}
+@media (min-width: 600px) {
+  .panel {
+    max-width: 500px;
+  }
+}
+
+.panel-header {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1rem 0 2rem;
+  text-transform: uppercase;
+}
+@media (min-width: 600px) {
+  .panel-header {
+    font-size: 1.5rem;
+  }
+}
+
+.toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc-list-item {
+  margin: 0.5rem 0;
+  font-size: 1.3rem;
+  transition: color 200ms ease;
+}
+.toc-list-item:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 600px) {
+  .toc-list-item {
+    font-size: 1.7rem;
+  }
+}
+.toc-list-item:hover {
+  color: rgba(51, 51, 51, 0.7);
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+}
+
+.settings-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings-label {
+  margin: 0;
+}
+
+.switch {
+  width: 30px;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 50px;
+  position: relative;
+}
+
+.switch-inner {
+  border-radius: 50%;
+  background-color: #aaa;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 200ms ease, background-color 200ms ease;
+}
+.switch-inner.active {
+  transform: translateX(50%);
+  background-color: #777;
+}
